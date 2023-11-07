@@ -33,6 +33,10 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
 
     > **Note:** You have to remove this attribute entirely to make the details hidden. `open="false"` makes the details visible because this attribute is Boolean.
 
+- `name` {{experimental_inline}}
+
+  - : This string attribute is similar to the `name` attribute on {{HTMLElement("input/radio", "<input type=\"radio\">")}} elements. It groups together one or more `<details>` elements with the same `name` value, and only allows one `<details>` element to be open at a time.
+
 ## Events
 
 In addition to the usual events supported by HTML elements, the `<details>` element supports the {{domxref("HTMLDetailsElement/toggle_event", "toggle")}} event, which is dispatched to the `<details>` element whenever its state changes between open and closed. It is sent _after_ the state is changed, although if the state changes multiple times before the browser can dispatch the event, the events are coalesced so that only one is sent.
